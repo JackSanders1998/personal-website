@@ -71,7 +71,8 @@ module.exports = {
     {
       resolve: `gatsby-source-github-api`,
       options: {
-        token: process.env.GATSBY_GITHUB_API_TOKEN,
+        // replace with --> token: process.env.GATSBY_GITHUB_API_TOKEN,
+        token: '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', 
         graphQLQuery: data.githubApiQuery,
         variables: data.githubApiVariables,
       },
