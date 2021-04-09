@@ -1,7 +1,8 @@
 const data = require('./src/data/data');
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
+require("dotenv").config({
+  path: `.env`, // .${process.env.NODE_ENV}
+})
+
 module.exports = {
   siteMetadata: {
     title: data.SiteTitle,
@@ -71,8 +72,9 @@ module.exports = {
     {
       resolve: `gatsby-source-github-api`,
       options: {
-        // replace with --> token: process.env.GATSBY_GITHUB_API_TOKEN,
-        token: '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', 
+        url: "https://api.github.com/graphql",
+        // token: `{process.env.GATSBY_GITHUB_API_TOKEN}`,
+        token: process.env.GATSBY_GITHUB_API_TOKEN,
         graphQLQuery: data.githubApiQuery,
         variables: data.githubApiVariables,
       },
