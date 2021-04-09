@@ -1,8 +1,8 @@
 module.exports = {
-  SiteTitle: 'Abdelali',
+  SiteTitle: 'Jack',
   Sitelogo: '#',
-  SiteLogoText: 'Abdelali',
-  SiteAuthor: 'Abdelali Dahir',
+  SiteLogoText: 'Jack',
+  SiteAuthor: 'Jack Sanders',
   SiteDescription: 'Front End Developer',
   defaultDescription: 'Software engineer!', 
   githubApiQuery: `query ($number_of_repos: Int!) {
@@ -42,19 +42,19 @@ module.exports = {
     number_of_repos: 12,
   }, 
   SiteSocialLinks: {
-    twitter: 'https://twitter.com/AbdaliDahir',
-    github: 'https://github.com/AbdaliDahir',
-    linkedin: 'https://www.linkedin.com/in/abdelali-dahir-0b5344111/',
+    twitter: 'https://twitter.com/jacklewisanders',
+    github: 'https://github.com/JackSanders1998',
+    linkedin: 'https://www.linkedin.com/in/jack-sanders-ba8661155/',
   },
   SiteAddress: {
-    city: 'Casablanca',
-    region: 'CurvaSud',
-    country: 'Morocco',
-    zipCode: 'ZipCode',
+    city: 'Portland',
+    State: 'Oregon',
+    country: 'USA',
+    zipCode: '97210',
   },
   SiteContact: {
-    email: 'abdali.dahir@gmail.com',
-    phone: 'phone number',
+    email: 'jacklewissanders@gmail.com',
+    phone: '(503)709-1430 ',
   },
-  SiteCopyright: '2020',
+  SiteCopyright: '2021',
 };
