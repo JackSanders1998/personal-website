@@ -25,7 +25,7 @@ const Footer = () => {
 						</div>
 					</FooterBody>
 					<div className="box">
-						<SubRight> Good design doesn't date. Bad design does. </SubRight>
+						<SubRight> Whatever you are, be a good one. </SubRight>
 						<CopyRight className="text-dark">
 							© 
 							<span> {new Date().getFullYear()}, Built with {` `} 
