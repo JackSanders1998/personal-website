@@ -16,7 +16,7 @@ export const RepositoryFooter = ({ repo }) => {
     )
   }
   return (
-    <div style={{ color: `#586069`, fontSize: 12 }}>
+    <div style={{ color: `#5C5F58`, fontSize: 12 }}>
       <FooterItem>
         <Circle
           style={{

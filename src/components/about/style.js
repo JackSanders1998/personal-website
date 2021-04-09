@@ -30,7 +30,7 @@ export const Text = styled.p`
   color: #232323;
   text-transform: capitalize;
   a {
-    color: #3F51B5;
+    color: #B73225;
     text-decoration: underline;
   }
 `
