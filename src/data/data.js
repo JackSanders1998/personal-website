@@ -15,7 +15,7 @@ module.exports = {
         nodes {
           name
           description
-          homepageUrl
+
           forkCount
           createdAt
           updatedAt

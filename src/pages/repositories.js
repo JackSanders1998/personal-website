@@ -43,7 +43,7 @@ export const gitHubQuery = graphql`
             nodes {
               name
               description
-              homepageUrl
+
               resourcePath
               forkCount
               createdAt
