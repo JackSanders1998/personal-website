@@ -37,7 +37,7 @@ const BlogPost = ({data, pageContext, location}) => {
                   </SmallText>
                 </header>
                 
-                <ArticleBody dangerouslySetInnerHTML={{ __html: post.html }} />
+                <ArticleBody className="align-left" dangerouslySetInnerHTML={{ __html: post.html }} />
               </ArticlePost>
 
               <nav>

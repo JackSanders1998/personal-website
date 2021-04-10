@@ -30,7 +30,7 @@ const About = () => {
                 I'm a senior studying Computer Science and Economics at the University of Oregon. 
               </Text>
               <Text> 
-                I'm passionate about data science, full stack web development, product management music, and basketball. 
+                I'm passionate about data science, full stack web development, product management, music, and basketball. 
                 I'm currently looking for roles in any and all of these fields. Please see my resume attached below.
               </Text>
               <Text> 

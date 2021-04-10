@@ -32,7 +32,7 @@ const portfolioWork = ({data, pageContext, location}) => {
                 </SmallText>
               </header>
               
-              <ArticleBody dangerouslySetInnerHTML={{ __html: work.html }} />
+              <ArticleBody className="align-left" dangerouslySetInnerHTML={{ __html: work.html }} />
             </ArticlePost>
           </div>
         </ContainerLayout>

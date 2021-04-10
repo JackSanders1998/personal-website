@@ -23,7 +23,8 @@ const BlogIndex = ({ data }) => {
             </SubTitle>
             <HeaderIntro>
               <SubText>
-                Articles on front-end design engineering, focused on HTML, CSS, SVG, accessiblity, and everything in between, with practical tips from real projects. Included here are links to articles published on magazines.
+                Articles on things I'm interested in: Data Science, Full Stack Web Development, Product Management, Music, And Basketball. 
+                There's not much here now...but I'll keep writing and eventually I'll remove this disclaimer.
               </SubText>
               <CategoriesTags /> 
             </HeaderIntro>

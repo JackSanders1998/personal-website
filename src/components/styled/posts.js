@@ -31,6 +31,7 @@ export const SmallText = styled.small`
 `
 export const ArticleBody = styled.div `
   margin-top: 5rem;
+  text-align: left;
   p {
     font-size: 1.5rem;
     font-family: "GT-Walsheim-Pro-Medium";
@@ -44,8 +45,8 @@ export const NaviagtionList = styled.ul`
   grid-row-gap: 5rem;
   list-style: none;
   padding: 0;
-  border-top: 4px solid #ff2d2d;
-  border-bottom: 4px solid #ff2d2d;
+  border-top: 4px solid #B73225;
+  border-bottom: 4px solid #B73225;
 `
 export const NaviagtionLi = styled.li`
   padding: 2rem 0;
