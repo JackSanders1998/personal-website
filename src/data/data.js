@@ -43,6 +43,8 @@ module.exports = {
   }, 
   SiteSocialLinks: {
     twitter: 'https://twitter.com/jacklewisanders',
+    facebook: 'https://www.facebook.com/jack.sanders.562329',
+    instagram: 'https://www.instagram.com/jacklewissanders/',
     github: 'https://github.com/JackSanders1998',
     linkedin: 'https://www.linkedin.com/in/jack-sanders-ba8661155/',
   },
