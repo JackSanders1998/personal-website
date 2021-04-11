@@ -25,7 +25,7 @@ const Categories = ({ data }) => {
           </SubTitle>
           <HeaderIntro>
             <SubText>
-              Articles on things I'm interested in: Data Science, Full Stack Web Development, Product Management, Music, And Basketball. 
+              Articles on things I'm interested in: Data Science, Full Stack Web Development, Product Management, Music, and Basketball. 
               There's not much here now...but I'll keep writing and eventually I'll remove this disclaimer.
             </SubText>
             <CategoriesTags /> 
@@ -67,11 +67,11 @@ const Categories = ({ data }) => {
                       </Title>
                       <SmallText> 
                         <Calendar className="align-middle text-primary" width="18" height="18" /> 
-                        <span className="align-middle"> date published : {node.frontmatter.date} </span>
+                        <span className="align-middle"> date published: {node.frontmatter.date} </span>
                       </SmallText>
                       <SmallText> 
                         <Clock className="align-middle text-primary" width="18" height="18" /> 
-                        <span className="align-middle"> read time : {node.frontmatter.time} </span>
+                        <span className="align-middle"> read time: {node.frontmatter.time} </span>
                       </SmallText>
                     </header>
                     <Text

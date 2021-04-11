@@ -28,7 +28,6 @@ export const Text = styled.p`
   font-size: 1.2rem;
   line-height: 2;
   color: #232323;
-  text-transform: capitalize;
   a {
     color: #B73225;
     text-decoration: underline;

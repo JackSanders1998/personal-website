@@ -39,7 +39,7 @@ module.exports = {
     }
   }`,
   githubApiVariables: {
-    number_of_repos: 12,
+    number_of_repos: 20,
   }, 
   SiteSocialLinks: {
     twitter: 'https://twitter.com/jacklewisanders',

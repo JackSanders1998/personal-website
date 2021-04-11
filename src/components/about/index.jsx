@@ -34,7 +34,7 @@ const About = () => {
                 I'm currently looking for roles in any and all of these fields. Please see my resume attached below.
               </Text>
               <Text> 
-                My company, <b className="lined-link"><a href="https://www.ampmusic.co">AmpMusic.co </a></b> strives to provide 
+                My company, <b className="lined-link"><a href="https://ampmusic.co">AmpMusic.co </a></b> strives to provide 
                 budding artists with all the tools they need to survive in the music industry. Check it out and let me know what you think!
               </Text>
               <ResumeButton href="resume.pdf" target="_blank"> Download resume </ResumeButton>

@@ -29,11 +29,11 @@ const BlogPost = ({data, pageContext, location}) => {
                   </Title>
                   <SmallText> 
                     <Calendar className="align-middle text-primary" width="18" height="18" /> 
-                    <span className="align-middle"> date published : {post.frontmatter.date} </span>
+                    <span className="align-middle"> date published: {post.frontmatter.date} </span>
                   </SmallText>
                   <SmallText> 
                     <Clock className="align-middle text-primary" width="18" height="18" /> 
-                    <span className="align-middle"> read time : {post.frontmatter.time} mins </span>
+                    <span className="align-middle"> read time: {post.frontmatter.time} mins </span>
                   </SmallText>
                 </header>
                 

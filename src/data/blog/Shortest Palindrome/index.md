@@ -3,7 +3,7 @@ title: Shortest Palindrome
 date: "2021-04-10T12:00:00.000Z"
 image: './shortest_palindrome.png'
 imageCredit: Jack Sanders
-time: 12
+time: 4
 categories: ['python3', 'LeetCode']
 description: "You are given a string 's'. You can convert 's' to a palindrome by adding characters in front of it. Return the shortest palindrome you can find by performing this transformation."
 ---
@@ -54,7 +54,7 @@ Return <em>the shortest palindrome you can find by performing this transformatio
 # My Solution
 ----------------
 <p>
-Given a string, <em>s</em> that is not a palindrome, the quickest possible way to turn <em>s</em> into a palindrome is by adding the last letter of <em>s</em> to the front of <em>s</em>. i.e. <em>eep</em> -> <em><strong>p</strong>eep</em>. Knowing this, the solution is easy. Simply tack on letters to the beginning of <em>s</em>, starting with the last letter of <em>s</em> and working your way to the front. The worst case scenario is that <em>s</em> requires all but its first letter to to be turned into a palindrome. i.e. <em>asdf</em> -> <em><strong>fds</strong>fdsasdf</em>.
+Given a string, <em>s</em> that is not a palindrome, the quickest possible way to turn <em>s</em> into a palindrome is by adding the last letter of <em>s</em> to the front of <em>s</em>. i.e. <em>eep</em> -> <em><strong>p</strong>eep</em>. Knowing this, the solution is easy. Simply tack on letters to the beginning of <em>s</em>, starting with the last letter of <em>s</em> and working your way to the front. The worst case scenario is that <em>s</em> requires all but its first letter to to be turned into a palindrome. i.e. <em>asdf</em> -> <em><strong>fds</strong>asdf</em>.
 
 ```
 class Solution:
