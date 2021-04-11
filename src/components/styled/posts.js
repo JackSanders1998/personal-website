@@ -33,8 +33,21 @@ export const ArticleBody = styled.div `
   margin-top: 5rem;
   text-align: left;
   p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: "GT-Walsheim-Pro-Medium";
+  }
+  pre, code {
+    background-color: #f7f9fa;
+    display: block;
+    padding: 20px;
+    padding: 10px 15px;
+    color: #263238;
+    line-height: 1.6;
+    font-size: 13px;
+    border-radius: 16px;
+  }
+  pre {
+    white-space: pre-wrap;
   }
 `
 

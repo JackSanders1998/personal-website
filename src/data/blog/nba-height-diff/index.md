@@ -8,110 +8,17 @@ time: 3
 description: "Which NBA teams have the largest height difference between two players?"
 ---
 
-# Results
 
-### Histogram
+# Histogram of Height Differences Between NBA Players by Team
 ![Heigh Difference Histogram](./hist2.png "Height Differences by NBA Teams")
 
-### Raw Data
-<p>
-================================================================================
-Brooklyn Nets
-DeAndre Jordan: 6'11" & Chris Chiozza: 5'11" for a difference of: 12 in.
-================================================================================
-Los Angeles Clippers
-Ivica Zubac: 7'0" & Lou Williams: 6'1" for a difference of: 11 in.
-================================================================================
-Milwaukee Bucks
-Brook Lopez: 7'0" & D.J. Augustin: 5'11" for a difference of: 13 in.
-================================================================================
-Utah Jazz
-Rudy Gobert: 7'0" & Donovan Mitchell: 6'0" for a difference of: 12 in.
-================================================================================
-Philadelphia 76ers
-Joel Embiid: 7'0" & Tyrese Maxey: 6'2" for a difference of: 10 in.
-================================================================================
-Golden State Warriors
-James Wiseman: 7'0" & Nico Mannion: 6'2" for a difference of: 10 in.
-================================================================================
-Los Angeles Lakers
-Marc Gasol: 6'11" & Quinn Cook: 6'1" for a difference of: 10 in.
-================================================================================
-Dallas Mavericks
-Boban Marjanović: 7'4" & Trey Burke: 6'0" for a difference of: 16 in.
-================================================================================
-Indiana Pacers
-Domantas Sabonis: 6'11" & Aaron Holiday: 6'0" for a difference of: 11 in.
-================================================================================
-Charlotte Hornets
-Nick Richards: 7'0" & Terry Rozier: 6'1" for a difference of: 11 in.
-================================================================================
-Toronto Raptors
-Aron Baynes: 6'10" & Kyle Lowry: 6'0" for a difference of: 10 in.
-================================================================================
-Sacramento Kings
-Hassan Whiteside: 7'0" & Kyle Guy: 6'1" for a difference of: 11 in.
-================================================================================
-Atlanta Hawks
-Clint Capela: 6'10" & Brandon Goodwin: 6'0" for a difference of: 10 in.
-================================================================================
-New York Knicks
-Mitchell Robinson: 7'0" & Jared Harper: 5'10" for a difference of: 14 in.
-================================================================================
-Cleveland Cavaliers
-JaVale McGee: 7'0" & Collin Sexton: 6'1" for a difference of: 11 in.
-================================================================================
-Denver Nuggets
-Bol Bol: 7'2" & Facundo Campazzo: 5'10" for a difference of: 16 in.
-================================================================================
-Portland Trail Blazers
-Harry Giles: 6'11" & Damian Lillard: 6'2" for a difference of: 9 in.
-================================================================================
-San Antonio Spurs
-Jakob Poeltl: 7'1" & Patty Mills: 6'1" for a difference of: 12 in.
-================================================================================
-Chicago Bulls
-Luke Kornet: 7'2" & Devon Dotson: 6'2" for a difference of: 12 in.
-================================================================================
-Houston Rockets
-DeMarcus Cousins: 6'10" & Eric Gordon: 6'3" for a difference of: 7 in.
-================================================================================
-New Orleans Pelicans
-Steven Adams: 6'11" & Eric Bledsoe: 6'1" for a difference of: 10 in.
-================================================================================
-Detroit Pistons
-Mason Plumlee: 6'11" & Saben Lee: 6'2" for a difference of: 9 in.
-================================================================================
-Orlando Magic
-Mo Bamba: 7'0" & Frank Mason III: 5'11" for a difference of: 13 in.
-================================================================================
-Minnesota Timberwolves
-Karl-Anthony Towns: 6'11" & Jordan McLaughlin: 5'11" for a difference of: 12 in.
-================================================================================
-Phoenix Suns
-Frank Kaminsky: 7'0" & Chris Paul: 6'0" for a difference of: 12 in.
-================================================================================
-Miami Heat
-Meyers Leonard: 7'0" & Kendrick Nunn: 6'2" for a difference of: 10 in.
-================================================================================
-Boston Celtics
-Tacko Fall: 7'5" & Tremont Waters: 5'10" for a difference of: 19 in.
-================================================================================
-Washington Wizards
-Robin Lopez: 7'0" & Ish Smith: 6'0" for a difference of: 12 in.
-================================================================================
-Oklahoma City Thunder
-Moses Brown: 7'2" & Luguentz Dort: 6'3" for a difference of: 11 in.
-================================================================================
-Memphis Grizzlies
-Jonas Valančiūnas: 6'11" & Tyus Jones: 6'0" for a difference of: 11 in.
-================================================================================
-<p>
 
 # Implementation
+<p>
+    <strong>Step 1:</strong> Set up some simple unit conversions:
+</p>
 
-Step 1: Set up some simple unit conversions:
-```
+<pre>
 def get_height_in_inches(height):
     feet, inches = height.split('-')
     return int(feet) * 12 + int(inches)
@@ -120,10 +27,13 @@ def get_height_in_feet(height):
     feet = height - (height % 1)
     inches = 12 * (height % 1)
     return int(feet) * 12 + int(inches)
-```
+</pre>
 
-Step 2: Find differences & display raw output
-```
+<p>
+    <strong>Step 2:</strong> Find differences & display raw output:
+</p>
+
+<pre>
 def print_players(team_heights):
     tallest_player = max(team_heights, key=team_heights.get)
     shortest_player = min(team_heights, key=team_heights.get)
@@ -150,46 +60,21 @@ def display_data():
         master_list.append([team.name, height_diff])
     print(master_list)
     return master_list
-```
+</pre>
 
 
-Step 3: Display graph
-```
-difference_list = []
-index_list = []
-for team in master_list:
-    index_list.append(team[0])
-    difference_list.append(team[1][-1])
+<p>
+    <strong>Step 3:</strong> Display graph:
+</p>
 
-# set font
-plt.rcParams['font.family'] = 'sans-serif'
-plt.rcParams['font.sans-serif'] = 'Helvetica'
+<pre>
+<em> This just an except of the source code </em>
 
-# set the style of the axes and the text color
-plt.rcParams['axes.edgecolor']='#333F4B'
-plt.rcParams['axes.linewidth']=0.8
-plt.rcParams['xtick.color']='#333F4B'
-plt.rcParams['ytick.color']='#333F4B'
-plt.rcParams['text.color']='#333F4B'
-
-# create some fake data
 print(difference_list)
 percentages = pd.Series(difference_list, 
                         index=index_list)
 df = pd.DataFrame({'percentage' : percentages})
 df = df.sort_values(by='percentage')
-
-# we first need a numeric placeholder for the y axis
-my_range=list(range(1,len(df.index)+1))
-
-fig, ax = plt.subplots(figsize=(5,10))
-
-# create for each expense type an horizontal line that starts at x = 0 with the length 
-# represented by the specific expense percentage value.
-plt.hlines(y=my_range, xmin=0, xmax=df['percentage'], color='#007ACC', alpha=0.2, linewidth=5)
-
-# create for each expense type a dot at the level of the expense percentage value
-plt.plot(df['percentage'], my_range, "o", markersize=5, color='#007ACC', alpha=0.6)
 
 # set labels
 ax.set_xlabel('Height Difference', fontsize=15, fontweight='black', color = '#333F4B')
@@ -202,15 +87,105 @@ plt.yticks(my_range, df.index)
 # add an horizonal label for the y axis 
 fig.text(-0.23, 0.96, 'Team', fontsize=15, fontweight='black', color = '#333F4B')
 
-# change the style of the axis spines
-# ax.spines['top'].set_color('none')
-# ax.spines['right'].set_color('none')
-# ax.spines['left'].set_smart_bounds(True)
-# ax.spines['bottom'].set_smart_bounds(True)
-
 # set the spines position
 ax.spines['bottom'].set_position(('axes', -0.04))
 ax.spines['left'].set_position(('axes', 0.015))
 
 plt.savefig('hist2.png', dpi=300, bbox_inches='tight')
-```
+</pre>
+
+<br>
+
+# Raw Print Statement from the Console
+--------------------------------
+<code>
+Brooklyn Nets<br>
+DeAndre Jordan: 6'11" & Chris Chiozza: 5'11" for a difference of: 12 in.
+<br>---<br>
+Los Angeles Clippers<br>
+Ivica Zubac: 7'0" & Lou Williams: 6'1" for a difference of: 11 in.
+<br>---<br>
+Milwaukee Bucks<br>
+Brook Lopez: 7'0" & D.J. Augustin: 5'11" for a difference of: 13 in.
+<br>---<br>
+Utah Jazz<br>
+Rudy Gobert: 7'0" & Donovan Mitchell: 6'0" for a difference of: 12 in.
+<br>---<br>
+Philadelphia 76ers<br>
+Joel Embiid: 7'0" & Tyrese Maxey: 6'2" for a difference of: 10 in.
+<br>---<br>
+Golden State Warriors<br>
+James Wiseman: 7'0" & Nico Mannion: 6'2" for a difference of: 10 in.
+<br>---<br>
+Los Angeles Lakers<br>
+Marc Gasol: 6'11" & Quinn Cook: 6'1" for a difference of: 10 in.
+<br>---<br>
+Dallas Mavericks<br>
+Boban Marjanović: 7'4" & Trey Burke: 6'0" for a difference of: 16 in.
+<br>---<br>
+Indiana Pacers<br>
+Domantas Sabonis: 6'11" & Aaron Holiday: 6'0" for a difference of: 11 in.
+<br>---<br>
+Charlotte Hornets<br>
+Nick Richards: 7'0" & Terry Rozier: 6'1" for a difference of: 11 in.
+<br>---<br>
+Toronto Raptors<br>
+Aron Baynes: 6'10" & Kyle Lowry: 6'0" for a difference of: 10 in.
+<br>---<br>
+Sacramento Kings<br>
+Hassan Whiteside: 7'0" & Kyle Guy: 6'1" for a difference of: 11 in.
+<br>---<br>
+Atlanta Hawks<br>
+Clint Capela: 6'10" & Brandon Goodwin: 6'0" for a difference of: 10 in.
+<br>---<br>
+New York Knicks<br>
+Mitchell Robinson: 7'0" & Jared Harper: 5'10" for a difference of: 14 in.
+<br>---<br>
+Cleveland Cavaliers<br>
+JaVale McGee: 7'0" & Collin Sexton: 6'1" for a difference of: 11 in.
+<br>---<br>
+Denver Nuggets<br>
+Bol Bol: 7'2" & Facundo Campazzo: 5'10" for a difference of: 16 in.
+<br>---<br>
+Portland Trail Blazers<br>
+Harry Giles: 6'11" & Damian Lillard: 6'2" for a difference of: 9 in.
+<br>---<br>
+San Antonio Spurs<br>
+Jakob Poeltl: 7'1" & Patty Mills: 6'1" for a difference of: 12 in.
+<br>---<br>
+Chicago Bulls<br>
+Luke Kornet: 7'2" & Devon Dotson: 6'2" for a difference of: 12 in.
+<br>---<br>
+Houston Rockets<br>
+DeMarcus Cousins: 6'10" & Eric Gordon: 6'3" for a difference of: 7 in.
+<br>---<br>
+New Orleans Pelicans<br>
+Steven Adams: 6'11" & Eric Bledsoe: 6'1" for a difference of: 10 in.
+<br>---<br>
+Detroit Pistons<br>
+Mason Plumlee: 6'11" & Saben Lee: 6'2" for a difference of: 9 in.
+<br>---<br>
+Orlando Magic<br>
+Mo Bamba: 7'0" & Frank Mason III: 5'11" for a difference of: 13 in.
+<br>---<br>
+Minnesota Timberwolves<br>
+Karl-Anthony Towns: 6'11" & Jordan McLaughlin: 5'11" for a difference of: 12 in.
+<br>---<br>
+Phoenix Suns<br>
+Frank Kaminsky: 7'0" & Chris Paul: 6'0" for a difference of: 12 in.
+<br>---<br>
+Miami Heat<br>
+Meyers Leonard: 7'0" & Kendrick Nunn: 6'2" for a difference of: 10 in.
+<br>---<br>
+Boston Celtics<br>
+Tacko Fall: 7'5" & Tremont Waters: 5'10" for a difference of: 19 in.
+<br>---<br>
+Washington Wizards<br>
+Robin Lopez: 7'0" & Ish Smith: 6'0" for a difference of: 12 in.
+<br>---<br>
+Oklahoma City Thunder<br>
+Moses Brown: 7'2" & Luguentz Dort: 6'3" for a difference of: 11 in.
+<br>---<br>
+Memphis Grizzlies<br>
+Jonas Valančiūnas: 6'11" & Tyus Jones: 6'0" for a difference of: 11 in.
+</code>
