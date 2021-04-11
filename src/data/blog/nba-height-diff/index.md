@@ -12,8 +12,36 @@ description: "Which NBA teams have the largest height difference between two pla
 # Histogram of Height Differences Between NBA Players by Team
 ![Heigh Difference Histogram](./hist2.png "Height Differences by NBA Teams")
 
+<br>
+
+# Motivation
+---
+
+This is a goofy proof-of-concept that I can use [Sportsipy](https://sportsipy.readthedocs.io/en/stable/) to pull sports data. Sportsipy is a "free python API that pulls the stats from www.sports-reference.com and allows them to be easily be used in python-based applications". This is perfect for me because most sports data APIs out there are too expensive and hard to use. With Sportsipy I can easily pull data directly into my python3 files like such.
+<pre>
+from sportsipy.nba.teams import Teams
+for team in Teams():
+    print("Name: {0} | Abbreviation: {1}".format(team.name, team.abbreviation))
+</pre>
+<pre>
+Name: Los Angeles Clippers | Abbreviation: LAC
+Name: Brooklyn Nets | Abbreviation: BRK
+Name: Milwaukee Bucks | Abbreviation: MIL
+Name: Utah Jazz | Abbreviation: UTA
+Name: Atlanta Hawks | Abbreviation: ATL
+Name: Denver Nuggets | Abbreviation: DEN
+Name: Boston Celtics | Abbreviation: BOS
+Name: New Orleans Pelicans | Abbreviation: NOP
+Name: Sacramento Kings | Abbreviation: SAC
+Name: Philadelphia 76ers | Abbreviation: PHI
+Name: Portland Trail Blazers | Abbreviation: POR
+...
+</pre>
+<br>
 
 # Implementation
+---
+
 <p>
     <strong>Step 1:</strong> Set up some simple unit conversions:
 </p>
