@@ -51,7 +51,7 @@ export const ArticleBody = styled.div `
   }
 `
 
-export const NaviagtionList = styled.ul`
+export const NavigationList = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 5rem;
@@ -61,7 +61,7 @@ export const NaviagtionList = styled.ul`
   border-top: 4px solid #B73225;
   border-bottom: 4px solid #B73225;
 `
-export const NaviagtionLi = styled.li`
+export const NavigationLi = styled.li`
   padding: 2rem 0;
   &:last-child {
     text-align: right;

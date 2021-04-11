@@ -4,7 +4,7 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import { Calendar, Clock } from 'react-feather'
 
-import {Intro, Title, ArticlePost, SmallText, ArticleBody, NaviagtionList, NaviagtionLi } from '../../components/styled/posts'
+import {Intro, Title, ArticlePost, SmallText, ArticleBody, NavigationList, NavigationLi } from '../../components/styled/posts'
 import {ContainerLayout} from '../../components/common'
 
 
@@ -41,22 +41,22 @@ const BlogPost = ({data, pageContext, location}) => {
               </ArticlePost>
 
               <nav>
-                <NaviagtionList>
-                  <NaviagtionLi>
+                <NavigationList>
+                  <NavigationLi>
                     {previous && (
                       <Link to={previous.fields.slug} rel="prev">
                         ← {previous.frontmatter.title}
                       </Link>
                     )}
-                  </NaviagtionLi>
-                  <NaviagtionLi>
+                  </NavigationLi>
+                  <NavigationLi>
                     {next && (
                       <Link to={next.fields.slug} rel="next">
                         {next.frontmatter.title} →
                       </Link>
                     )}
-                  </NaviagtionLi>
-                </NaviagtionList>
+                  </NavigationLi>
+                </NavigationList>
               </nav>
             </div>
           

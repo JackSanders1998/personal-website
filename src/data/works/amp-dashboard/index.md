@@ -21,7 +21,7 @@ Learn more and sign up up for amp's dashboard at our [homepage](https://ampmusic
 
 ---
 
-The front end of the dashboard is built on React.js which was bootstrapped with create-react-app. The back end of the dashboard is built with Express.js and a little bit of python3 to handle some scraping and APIs. The data gathered from the back end of the application is stored in MongoDB Atlas and hosted on Heroku. This effectively turns amp's backend into a fully portable API which can be called locally or from the live dashboard. This allows us to host our back end and front end seperately. The front end is hosted as an application on Digital Ocean.
+The front end of the dashboard is built on React.js which was bootstrapped with create-react-app. The back end of the dashboard is built with Express.js and a little bit of python3 to handle some scraping and APIs. The data gathered from the back end of the application is stored in MongoDB Atlas and hosted on Heroku. This effectively turns amp's backend into a fully portable API which can be called locally or from the live dashboard. This allows us to host our back end and front end separately. The front end is hosted as an application on Digital Ocean.
 
 <br>
 
@@ -29,4 +29,4 @@ The front end of the dashboard is built on React.js which was bootstrapped with 
 
 ---
 
-The dashboard is free right now, so please join the [waitlist](https://ampmusic.co/waitlist).
+The dashboard is free right now, so please join the [wait list](https://ampmusic.co/waitlist).
