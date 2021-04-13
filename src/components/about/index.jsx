@@ -27,7 +27,7 @@ const About = () => {
             <div>
               <Title> Hello, I’m Jack </Title>
               <Text>
-                I'm a senior studying Computer Science and Economics at the University of Oregon. 
+                I'm a senior studying computer science and economics at the University of Oregon. 
               </Text>
               <Text> 
                 I'm passionate about data science, full stack web development, product management, music, and basketball. 

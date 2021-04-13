@@ -10,6 +10,7 @@ module.exports = {
     author: data.SiteAuthor,
   },
   plugins: [
+    `gatsby-plugin-open-graph-images`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
