@@ -7,18 +7,6 @@ exports.createPages = async ({ graphql, actions }) => {
   const blogPost = path.resolve(`./src/templates/blogs/post.js`)
   const categoriesTemplate = path.resolve("src/templates/blogs/categories.js")
   const portfolioWork = path.resolve(`./src/templates/works/work.js`)
-  // const openGraphImage = createOpenGraphImage(createPage, {
-  //   path: "/og-image/index.png",
-  //   // path: "src/assets/img/profile.png",
-  //   component: path.resolve(`src/templates/index.og-image.js`),
-  //   size: {
-  //     width: 400,
-  //     height: 50,
-  //   },
-  //   context: {
-  //     description: "a image created with gatsby-plugin-open-graph-images",
-  //   },
-  // });
   const blogResult = await graphql(
     `
       {
