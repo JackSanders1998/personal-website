@@ -4,7 +4,7 @@ categories: ['stats', 'NBA', 'R', 'markdown']
 image: './hist2.png'
 imageCredit: Jack Sanders
 date: "2021-04-12T12:00:00.000Z"
-time: 3
+time: 5
 description: "At what age do NBA players score the most points?"
 ---
 
