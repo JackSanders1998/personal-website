@@ -1,7 +1,7 @@
 ---
 title: NBA Age Analysis
 categories: ['stats', 'NBA', 'R', 'markdown']
-image: './hist2.png'
+image: './ggplot2_files/figure-gfm/fig1-1.png'
 imageCredit: Jack Sanders
 date: "2021-04-12T12:00:00.000Z"
 time: 5
