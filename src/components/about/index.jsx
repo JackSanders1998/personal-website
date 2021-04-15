@@ -30,8 +30,8 @@ const About = () => {
                 I'm a senior studying computer science and economics at the University of Oregon. 
               </Text>
               <Text> 
-                I'm passionate about data science, full stack web development, product management, music, and basketball. 
-                I'm currently looking for roles in any and all of these fields. Please see my resume attached below.
+                I'm passionate about software engineering, product management, data science, full stack web development, music, and basketball. 
+                I'm currently looking for software engineering roles, but I would also love to work in any of the fields mentioned above. Please see my resume attached below.
               </Text>
               <Text> 
                 My company, <b className="lined-link"><a href="https://ampmusic.co">AmpMusic.co </a></b> strives to provide 
