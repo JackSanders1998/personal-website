@@ -1,10 +1,10 @@
 ---
-title: fetch
+title: Fetch
 tags: ['Swift', 'SwiftUI', 'FireBase', 'UIKit']
 category: front-end
 image: './cover.png'
 date: "2021-03-09T12:00:00.000Z"
-description: "fetch: a Tinder clone for dog playdates"
+description: "Fetch: a Tinder clone for dog playdates"
 ---
 
 ![fetch deck](./deck.png "fetch deck")
@@ -107,7 +107,11 @@ run: open Fetch.xcworkspace
 `XCode > Product > Run`
 
 
-# Contributors
+# Team
+
+![fetch team](./team.png "fetch team")
+
+### Contributors
 
 Ronny Fuentes <ronnyf@uregon.edu>  
 Kyra Novitzky <knovitzk@uoregon.edu>  
