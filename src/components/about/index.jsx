@@ -22,16 +22,16 @@ const About = () => {
           <AboutSection>
             <div>
               <Avatar fluid={data.placeholderImage.childImageSharp.fluid} alt="user photo" />
-              <SubTitle> CS & Econ Student</SubTitle>
+              <SubTitle> Software Engineer </SubTitle>
             </div> 
             <div>
               <Title> Hello, I’m Jack </Title>
               <Text>
-                I'm a senior studying computer science and economics at the University of Oregon. 
+                I'm a software engineer in the Client Integration department at <b className="lined-link"><a href="https://www.epsilon.com/us">Epsilon</a></b>, an ad-tech company owned by Publicis Groupe.
               </Text>
               <Text> 
-                I'm passionate about software engineering, product management, data science, full stack web development, music, and basketball. 
-                I'm currently looking for software engineering roles, but I would also love to work in any of the fields mentioned above. Please see my resume attached below.
+                I'm passionate about software engineering, full stack web development, music, basketball, and rock climbing. 
+                I am always looking for a challenge where I can learn and grow while meeting new people. Please see my resume attached below.
               </Text>
               <Text> 
                 My company, <b className="lined-link"><a href="https://ampmusic.co">AmpMusic.co </a></b> strives to provide 
